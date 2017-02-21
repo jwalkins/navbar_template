@@ -1,0 +1,127 @@
+   .navbar-brand {
+    margin: 0 !important;
+  }
+
+  #navbar-brand-image img {
+    height: 30px;
+    width: auto;
+    padding: 0;
+  }
+
+    #navbar-nav-image {
+    height: 50px !important;
+    width: auto;
+    padding: 0;
+  }
+
+
+/*Align Navbar text center*/
+ .navbar .navbar-nav {
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+      font-size: 20px;
+  }
+
+  .navbar .navbar-collapse{
+      text-align: center;
+  }
+
+  .navbar {
+    background: rgba(17, 34, 51, 0.9);
+  }
+
+  .navbar-brand {
+    margin-top: 5px;
+  }
+
+
+  .navbar-nav li a:visited {
+    color: #66CC99 !important;
+    background-color: #003B46 !important;
+  }
+
+/*Dropdown Menu CSS*/
+   .dropdown-menu {
+      text-align: center;
+      font-size: 100%;
+      background-color: #003B46 !important;
+      width:100%;
+    }
+
+  .dropdown-menu li a:hover {
+      color: #003B46 !important;
+      background-color: #C4DFE6 !important;
+    }
+
+    /*Dropdown CSS 2) Change Dropdown on Transition - @media part means 'only do this where width is over 979px'*/
+   @media (min-width: 1201px) {
+      @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /*Open Submenu on hover CSS*/
+
+    li.dropdown:hover ul.dropdown-menu {
+        opacity: 1;
+    }
+    li.dropdown:hover ul.dropdown-menu {
+        display: block;
+        -webkit-animation: fadeIn 0.5s;
+        animation: fadeIn 0.5s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+  }
+  /*Dropdown CSS END*/
+
+
+  /*Align Navbar text center END*/
+
+  .navbar-toggle .icon-bar {
+      background-color:  #66CC99 !important;
+    } /* 3 bar icon colour*/
+
+ /*Change 3 lines into Cross*/
+  /*Spaces icon bars out*/
+  .icon-bar:nth-of-type(2) {
+        top: 1px;
+    }
+
+  .icon-bar:nth-of-type(3) {
+        top: 2px;
+    }
+  /*Spaces icon bars out END*/
+
+  .icon-bar {
+        position: relative;
+        transition: all 250ms ease-in-out; /* Changes time of transition*/
+    }
+
+  .navbar-toggle.active .icon-bar:nth-of-type(1) { /*1st nth of type means 1st of 3 ".icon-bar" classes*/
+        top: 6px;
+        transform: rotate(315deg);
+    }
+
+  .navbar-toggle.active :nth-of-type(2) {
+        background-color: transparent !important; /*Important needed here to make sure 2nd bar disappears on transition*/
+    }
+
+  .navbar-toggle.active .icon-bar:nth-of-type(3) {
+        top: -6px;
+        transform: rotate(-315deg);
+    }
+/*Change 3 lines into Cross End*/
