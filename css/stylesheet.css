@@ -1,88 +1,22 @@
-   .navbar-brand {
-    margin: 0;
-  }
+/* navbar align centre */
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
 
-  #navbar-brand-image img {
-    height: 30px;
-    width: auto;
-    padding: 0;
-  }
+.navbar .navbar-collapse {
+    text-align: center;
+}
 
-    #navbar-nav-image {
-    height: 50px;
-    width: auto;
-    padding: 0;
-  }
+.dropdown-menu li {
+    text-align: center;
+}
+/* navbar align centre END*/
 
-
-/*Align Navbar text center*/
- .navbar .navbar-nav {
-      display: inline-block;
-      float: none;
-      vertical-align: top;
-      font-size: 20px;
-  }
-
-  .navbar .navbar-collapse{
-      text-align: center;
-  }
-
-  .navbar {
-    background: rgba(17, 34, 51, 0.9);
-  }
-
-  .navbar-brand {
-    margin-top: 5px;
-  }
-
-
-  .navbar-nav li a:visited {
-    color: #66CC99 !important;
-    background-color: #003B46 !important;
-  }
-
-
-
-    /*Dropdown CSS 2) Change Dropdown on Transition - @media part means 'only do this where width is over 979px'*/
-   @media (min-width: 1201px) {
-      @-webkit-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
-    /*Open Submenu on hover CSS*/
-
-    li.dropdown:hover ul.dropdown-menu {
-        opacity: 1;
-    }
-    li.dropdown:hover ul.dropdown-menu {
-        display: block;
-        -webkit-animation: fadeIn 0.5s;
-        animation: fadeIn 0.5s;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-    }
-  }
-  /*Dropdown CSS END*/
-
-
-  /*Align Navbar text center END*/
 
   .navbar-toggle .icon-bar {
-      background-color:  #66CC99;
-    } /* 3 bar icon colour*/
+      background-color:  black;
+    } /* 3 bar icon colour - required because not using navbar-default or navbar-inverse colour scheme*/
 
  /*Change 3 lines into Cross*/
   /*Spaces icon bars out*/
